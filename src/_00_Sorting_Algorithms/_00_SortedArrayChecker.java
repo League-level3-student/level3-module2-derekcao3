@@ -26,6 +26,9 @@ public class _00_SortedArrayChecker {
 	//   The method returns true if the double
 	//   array is in ascending order and false otherwise
 	static boolean doubleArraySorted(double j[]) {
+		for (int i = 0; i < j.length; i++) {
+			
+		}
 		return false;
 		
 	}

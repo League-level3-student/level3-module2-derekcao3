@@ -1,7 +1,19 @@
 package _00_Sorting_Algorithms;
 
 public class _00_SortedArrayChecker {
-	//1. Write a static method called intArraySorted. 
+	//1. Write a static method called intArraySorted.
+	static boolean intArraySorted(int j[]) {
+		for (int i = 0; i < j.length; i++) {
+			if(j[i]!=i) {
+				return false;
+			}
+			else{
+				return true;
+			}
+			
+		}
+		return false;
+	}
 	//   This method takes in an array of integers
 	//   and it returns a boolean.
 	//   The method returns true if the integer
@@ -13,7 +25,10 @@ public class _00_SortedArrayChecker {
 	//   and it returns a boolean.
 	//   The method returns true if the double
 	//   array is in ascending order and false otherwise
-
+	static boolean doubleArraySorted(double j[]) {
+		return false;
+		
+	}
 	
 	//3. Write a static method called charArraySorted. 
 	//   This method takes in an array of characters

@@ -24,8 +24,8 @@ public class MergeSorter extends Sorter {
 		//   and put the rest of the method inside of it
 		if(low<high) {
 			int middle = (low+ high)/2;
-			mergeSort(temp, low, middle, display);
-			mergeSort(temp, middle+1, high, display);
+			mergeSort(array, low, middle, display);
+			mergeSort(array, middle+1, high, display);
 			for (int i = low; i <= high; i++) {
 				temp[i] = array[i]; 
 			}

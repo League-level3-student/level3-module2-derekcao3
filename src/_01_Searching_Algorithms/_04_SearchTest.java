@@ -4,6 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import _00_Sorting_Algorithms._00_SortedArrayChecker;
+
 class _04_SearchTest {
 
 	// A MINIMUM OF 3 TESTS ARE REQUIRED FOR EACH METHOD
@@ -11,6 +13,10 @@ class _04_SearchTest {
 	@Test
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
+		String[] list = {"apple", "banana", "pear" };
+		assertEquals(_00_LinearSearch.linearSearch(list, "banana"), 1);
+		assertEquals(_00_LinearSearch.linearSearch(list, "pear"), 2);
+		assertNotEquals(_00_LinearSearch.linearSearch(list, "orange"), 3);
 	}
 
 	@Test

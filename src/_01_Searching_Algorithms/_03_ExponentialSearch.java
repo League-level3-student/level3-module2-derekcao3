@@ -40,8 +40,9 @@ public class _03_ExponentialSearch {
 		//		half of the counter
 		//		minimum
 		//		the value to be found
-		
+		int found = _01_BinarySearch.binarySearch(array, counter/2, mininum, value);			 
+		 
 		//10. return the result
-		return 0;
+		return found;
 	}
 }

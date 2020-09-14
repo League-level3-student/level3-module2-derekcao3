@@ -43,5 +43,8 @@ class _04_SearchTest {
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		int[] list = {20,40,60,80};
+		assertEquals(_03_ExponentialSearch.exponentialSearch(list, 40), 1);
+		
 	}
 }

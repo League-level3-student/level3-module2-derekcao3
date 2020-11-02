@@ -91,21 +91,24 @@ public class Algorithms {
 	}
 	
 	public static List<String> sortDNA(List<String> unsortedSequences){
-		boolean loop = false;
-
-		for (int i = 0; i < unsortedSequences.size()-1; i++) {
-			for (int j = 0; j < array.length; j++) {
-				
-			
-			if(unsortedSequences.get(i).length()>unsortedSequences.get(i+1).length()) {
-				Collections.swap(unsortedSequences,i,i+1);
-				System.out.println(unsortedSequences);
+		for (int i = 0; i < unsortedSequences.size() - 1; i++) {
+			for (int j = i + 1; j < unsortedSequences.size(); j++) {
+				if (unsortedSequences.get(i).length() > unsortedSequences.get(j).length()) {
+					String temp =  unsortedSequences.get(j);
+					unsortedSequences.set(j, unsortedSequences.get(i));
+					unsortedSequences.set(i, temp);
+				}
 			}
-	}		
 		}
 		
 		return unsortedSequences;
 		
+	}
+	
+	public static List<String> sortWords(List<String> words){
+		
+		Collections.sort(words); 
+		return words;
 	}
 }
 	

@@ -6,11 +6,15 @@ public class StringTrimmer {
 	
 	static public String trimString(String str, int removesLeft) {
 		//1. If there are no removes left
+		if(removesLeft == 0) {
+			return str;
+		}
 			//2.  return the string
 		
 		//3. Else you need to substring the string by 1, reduce removesLeft by 1, and then return both. 
-		
-		return null;
+		else {
+			return trimString(str.substring(0,str.length()-1),removesLeft-1);
+		}
 	}
 	
 	public static void main(String[] args) {

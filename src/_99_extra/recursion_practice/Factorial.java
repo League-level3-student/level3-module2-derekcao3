@@ -22,5 +22,7 @@ public class Factorial {
 	
 	public static void main(String[] args) {
 		System.out.println("!5 is " + factorial(5));
+		System.out.println("!17 is " + factorial(17));
+		System.out.println("!28 is " + factorial(28));
 	}
 }
